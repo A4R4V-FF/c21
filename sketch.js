@@ -28,9 +28,10 @@ function setup() {
 	World.add(world,ball);
 
 	//Write the command to display the ground objects created in ground.js 
+	groundObj=new ground(width/2,670,width,20);
+	leftSide=new ground(1100,600,20,120);
+	rightSide=new ground(1350,600,20,120);
 	Engine.run(engine);
-
-    display();
 }
 
 
@@ -40,7 +41,7 @@ function draw() {
 
 // Draw the ball ball using ellipse function 
   
-  ellipse(ball.position.x,ball.position.y,);
+  ellipse(ball.position.x,ball.position.y,radius);
 
   groundObj.display(); 
   leftSide.display();  
